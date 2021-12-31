@@ -9,7 +9,7 @@
 
 ## Building our first image
 
-We will start by creating a basic image for a small app built from the [greetings.go](./greetings.go) file. 
+We will start by creating a basic image for a small app built from the [hello.go](./hello.go) file. 
 As we discussed earlier will create our image using other images as a base. For this container we will use 
 the [scracth](https://hub.docker.com/_/scratch). The scratch image is meant to be used when creating base images 
 or a super small image like the one we are about to build. 
