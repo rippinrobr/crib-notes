@@ -1,4 +1,4 @@
-package main 
+package main
 
 import (
 	"fmt"
@@ -10,12 +10,12 @@ func greeting(w http.ResponseWriter, req *http.Request) {
 	language := os.Getenv("LANG")
 
 	switch language {
-	  case "FR":
-	    fmt.Fprintf(w, "bonjour\n")
-	  case "ES":
-	    fmt.Fprintf(w, "hola\n")
-          default:
-	    fmt.Fprintf(w, "hello\n")
+	case "FR":
+		fmt.Fprintf(w, "bonjour, ami\n")
+	case "ES":
+		fmt.Fprintf(w, "hola, amigo\n")
+	default:
+		fmt.Fprintf(w, "hello, friend\n")
 	}
 }
 
